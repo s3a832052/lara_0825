@@ -13,7 +13,7 @@
                         <h1>Man must explore, and this is exploration at its greatest</h1>
                         <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
                         <span class="meta">Posted by
-              <a href="#">Start Bootstrap</a>
+              <a href="{{route('posts.index')}}">Start Bootstrap</a>
               on August 24, 2019</span>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
 
                     <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
 
-                    <a href="#">
+                    <a href="{{route('posts.index')}}">
                         <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
                     </a>
                     <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
