@@ -21,10 +21,10 @@ Route::get('/', function () {
 //    $post->content='test content';
 //    $post->save();
 
-    Post::create([
-        'title'=>'test title2',
-        'content'=>'test content2'
-    ]);
+//    Post::create([
+//        'title'=>'test title2',
+//        'content'=>'test content2'
+//    ]);
 
 //    $posts=Post::all();
 //    dd($posts);
@@ -41,11 +41,15 @@ Route::get('/', function () {
 //        'content'=>'updated content'
 //    ]);
 
-    $post= Post::find(1);
-    $post->title = 'saved title';
-    $post->content = 'saved content';
-    $post->save();
+//    $post= Post::find(1);
+//    $post->title = 'saved title';
+//    $post->content = 'saved content';
+//    $post->save();
 
+//    $post=Post::find(1);
+//    $post->delete();
+//    Post::destroy(2);
+      Post::destroy(3, 5, 7);
 });
 Route::get('post',[PostsController::class,'index'])->name('posts.index');
 Route::get('posts',[PostsController::class,'show'])->name('posts.show');
